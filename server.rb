@@ -1,7 +1,7 @@
 require 'sinatra' # do not run the code from atom
 
 get '/' do
-  "Hello World"
+  File.read(File.join("public", "hello.html"))
 end
 
 get '/wyncode' do
